@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="Description" content=" HTML+CSS Task | Final Round">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#ffd200">
+  <link rel="icon" type="image/x-icon" href="https://devchallenge.it/media/media/1101_favicon-devchallenge.ico">
+  <title>Final task</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <script src="js/svg4everybody.js"></script>
+  <script>
+    svg4everybody();
+  </script>
+</head>
+<body class="no-focus">
+<noscript>
+  document.write('<script src="js/index.js" async></script>');
+  document.write(JavaScript is required for correct time!)
+</noscript>
+<header class="header">
+  <div class="container header__container">
+    <a href="#" class="header__back" aria-label="Back link">
+      <svg class="header__arrow" width="24" height="24" role="img">
+        <use xlink:href="img/sprite.svg#arrow"></use>
+      </svg>
+    </a>
+    <section class="profile header__profile" id="profile">
+      <img class="profile__img" src="img/img_user.png" alt="Elwin Sharvill" height="60" width="60">
+      <h1 class="profile__title">Elwin Sharvill</h1>
+      <form>
+        <label for="email" class="profile__label">
+          <span class="visually-hidden">Your email</span>
+          <select class="profile__select" id="email" name="email">
+            <option>elwinsharvill@gmail.com</option>
+            <option>example@gmail.com</option>
+          </select>
+        </label>
+      </form>
+      <button class="profile__btn">Manage your Google Account</button>
+    </section>
+    <button class="header__menu">
+      <span class="visually-hidden">Open menu</span>
+      <svg class="header__arrow" width="24" height="24">
+        <title>Open menu icon</title>
+        <use xlink:href="img/sprite.svg#dots"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<main>
+  <div class="tabs">
+    <input name="tabs" type="radio" id="tab-1" checked="checked" class="tabs__input tabs__input--1"/>
+    <label for="tab-1" class="tabs__label tabs__label--1">Your info</label>
+    <input name="tabs" type="radio" id="tab-2" class="tabs__input tabs__input--2"/>
+    <label for="tab-2" class="tabs__label tabs__label--2">Assistant</label>
+    <input name="tabs" type="radio" id="tab-3" class="tabs__input tabs__input--3"/>
+    <label for="tab-3" class="tabs__label tabs__label--3">Services</label>
+    <input name="tabs" type="radio" id="tab-4" class="tabs__input tabs__input--4"/>
+    <label for="tab-4" class="tabs__label tabs__label--4">Home</label>
+
+    <ul class="panel panel--1">
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#user"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Nickname</b>
+          <p class="panel__text panel__text--desc">What your Assistant will call you</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#home"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Your places</b>
+          <p class="panel__text panel__text--desc">Home & work addresses</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#car"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Getting around</b>
+          <p class="panel__text panel__text--desc">Transport modes</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#pay"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Payments</b>
+          <p class="panel__text panel__text--desc">Payment methods & purchase approvals</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#umbrella"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Weather</b>
+          <p class="panel__text panel__text--desc">Preferred temperature unit</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#reservations"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Reservations</b>
+          <p class="panel__text panel__text--desc">For flights, hotels and events</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#purchases"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Purchases</b>
+          <p class="panel__text panel__text--desc">Your transactions, including deliveries</p>
+        </div>
+      </li>
+    </ul>
+    <ul class="panel panel--2">
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#languages"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Languages</b>
+          <p class="panel__text panel__text--desc">For speaking to your Assistant</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#conversation"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Continued Conversation</b>
+          <p class="panel__text panel__text--desc">For asking follow-up questions</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#control"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Home control</b>
+          <p class="panel__text panel__text--desc">Manage the devices in your home</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img panel__img--routines" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#routines"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Routines</b>
+          <p class="panel__text panel__text--desc">Multiple actions with one command</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#email"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Email updates</b>
+          <p class="panel__text panel__text--desc">Latest news & features</p>
+        </div>
+      </li>
+      <li class="panel__item panel__item--title">
+          <h3 class="panel__subtitle">Assistant devices</h3>
+      </li>
+      <li class="panel__item panel__item--small">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#mobile"></use>
+        </svg>
+        <b class="panel__text">Elwin's iPhone</b>
+      </li>
+      <li class="panel__item panel__item--small">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#mini-home"></use>
+        </svg>
+        <b class="panel__text">Google Home Mini</b>
+      </li>
+    </ul>
+    <ul class="panel panel--3">
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#video"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Voice & video calls</b>
+          <p class="panel__text panel__text--desc">Service & default numbers</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#shopping"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Shopping list</b>
+          <p class="panel__text panel__text--desc">See or edit your list</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#music"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Music</b>
+          <p class="panel__text panel__text--desc">Services used to play music</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#news"></use>
+        </svg>
+        <div>
+          <b class="panel__text">News</b>
+          <p class="panel__text panel__text--desc">Services used to play news</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#play"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Videos & Photos</b>
+          <p class="panel__text panel__text--desc">Services that play videos & show photos</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#calendar"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Calendar</b>
+          <p class="panel__text panel__text--desc">Default calendars</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#reminders"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Reminders</b>
+          <p class="panel__text panel__text--desc">Create or manage reminders</p>
+        </div>
+      </li>
+      <li class="panel__item">
+        <svg class="panel__img" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#stocks"></use>
+        </svg>
+        <div>
+          <b class="panel__text">Stocks</b>
+          <p class="panel__text panel__text--desc">Follow stocks & set preferences</p>
+        </div>
+      </li>
+    </ul>
+    <div class="panel panel--4">
+      <button type="button" class="panel__add">
+        <svg class="panel__cross" width="24" height="24" role="img">
+          <use xlink:href="img/sprite.svg#add"></use>
+        </svg>
+        Add...
+      </button>
+    </div>
+  </div>
+</main>
+<footer class="container footer">
+  <span class="privacy">Privacy Policy  ●  Terms of Service</span>
+</footer>
+<script src="js/index.js" async></script>
+</body>
+</html>

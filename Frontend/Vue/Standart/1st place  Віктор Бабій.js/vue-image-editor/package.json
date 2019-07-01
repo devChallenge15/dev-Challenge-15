@@ -1,0 +1,25 @@
+{
+  "name": "vue-image-editor",
+  "version": "1.0.0",
+  "description": "vuejs component",
+  "main": "dist/vue-image-editor.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "start": "cross-env NODE_ENV=development webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.1",
+    "vue-loader": "^12.0.3",
+    "vue-template-compiler": "^2.3.2",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.2"
+  }
+}

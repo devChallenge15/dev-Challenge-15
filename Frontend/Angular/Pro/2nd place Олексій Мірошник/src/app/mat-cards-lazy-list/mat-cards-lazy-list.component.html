@@ -1,0 +1,8 @@
+<div infiniteScroll
+     [infiniteScrollDistance]="0"
+     [infiniteScrollThrottle]="150"
+     [immediateCheck]="true"
+     (scrolled)="onScrollDown($event)">
+  <ng-container #viewContainer></ng-container>
+</div>
+<ng-container #btnViewContainer></ng-container>

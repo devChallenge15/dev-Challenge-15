@@ -1,0 +1,6 @@
+{
+  "extends": "stylelint-config-recommended-scss",
+  "rules": {
+    "selector-max-compound-selectors": 3
+  }
+}

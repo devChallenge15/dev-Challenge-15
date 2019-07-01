@@ -1,0 +1,14 @@
+{
+    "weather_label": "Дізнатись погоду",
+    "city_placeholder": "Місто",
+    "language_change_label": "Змінити мову",
+    "weather": {
+        "temperature_now": "Температура (зараз)",
+        "temperature_min": "Мін",
+        "temperature_max": "Макс",
+        "humidity": "Вологість",
+        "description": "Погода"
+    },
+    "success": "Успішно отримані дані",
+    "error": "Помилка в отримані данних"
+}

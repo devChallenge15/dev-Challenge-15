@@ -1,0 +1,30 @@
+{
+  "name": "devchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "browser-sync dist"
+    
+  },
+  "dependencies": {
+    "gulp": "3.9.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "cssnano": "^4.1.10",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svg-css": "^1.3.0",
+    "gulp-svg-to-css": "^1.1.15",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-uglify": "^3.0.2",
+    "svgcss": "^0.3.0",
+    "svgmin": "^0.1.0"
+  }
+}

@@ -1,0 +1,55 @@
+<!-- <cdk-virtual-scroll-viewport
+[itemSize]="100"
+> -->
+  <!-- <div *cdkVirtualFor="let itemNumber of itemsLength"> -->
+    <!-- <div *ngFor="let itemNumber of itemsLength">
+    <ng-content select=".my-card-{{ itemNumber }}"></ng-content>
+  </div> -->
+  <!-- <ng-content></ng-content> -->
+  <!-- Adding a little bit of content projections :-) -->
+  
+<!-- </cdk-virtual-scroll-viewport> -->
+
+<!-- <div *ngFor="let myCard of myCards"> -->
+    <!-- <ng-template [ngTemplateOutlet]="myCard" [ngOutletContext]="{ item: item }"></ng-template> -->
+    <!-- <ng-template ngTemplateOutlet="myCards[0]"></ng-template> -->
+<!-- </div> -->
+<!-- <ng-container *ngTemplateOutlet="myCard[0]" ></ng-container> -->
+<!-- <ng-template
+    [ngTemplateOutlet]="itemTemplate">
+</ng-template> -->
+<!-- [ngTemplateOutletContext]="{ $implicit: row }" -->
+<!-- <ng-container *ngTemplateOutlet="myCards[0]"></ng-container> -->
+<!-- [ngTemplateOutletContext]="{ $implicit: row }" -->
+<!-- <ng-template
+    [ngTemplateOutlet]="myCards.first">
+</ng-template> -->
+<!-- <div [innerHTML]="myCards[0].nativeElement"></div> -->
+<!-- <ng-content select=".mat-card"></ng-content> -->
+
+
+
+<!-- Попередній код не вийшов. Обираю інший шлях -->
+
+<!-- <div class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="scrollDistance"
+    [infiniteScrollUpDistance]="scrollUpDistance"
+    [infiniteScrollThrottle]="throttle"
+    (scrolled)="scrollDown()"
+    (scrolledUp)="scrollUp()"> -->
+<div class="search-results"
+  infinite-scroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="50"
+  (scrolled)="scrollDown()"
+  [scrollWindow]="false">
+
+  <ng-content select='mat-card'></ng-content>
+  <!-- <ng-content select='.my-card-2'></ng-content> -->
+  <!-- <ng-content [select]="'.my-card-' + '2'"></ng-content> -->
+  <!-- test -->
+
+</div>
+
+<ng-content select="button"></ng-content> 

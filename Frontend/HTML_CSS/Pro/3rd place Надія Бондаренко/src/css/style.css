@@ -1,0 +1,272 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --blue: #4285f4;
+  --gray: #dfe1e5;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body.theme-is-light {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body.theme-is-black {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--gray);
+  border-radius: 17px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.profile {
+  width: 375px;
+  margin: 0 auto;
+  border: 1px solid var(--gray);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.profile__header {
+  display: grid;
+  grid-template-columns: repeat(1fr, 3);
+  grid-template-areas:
+    "status-bar status-bar status-bar"
+    "back avatar more"
+    "user-info user-info user-info";
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile__header.scroll {
+  grid-template-columns: repeat(1fr, 4);
+  grid-template-areas:
+    "status-bar status-bar status-bar status-bar"
+    "back avatar user-info more";
+}
+
+.profile__header.scroll .user-info__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  grid-area: avatar;
+}
+
+.profile__header.scroll .user-info {
+  text-align: left;
+}
+
+
+.profile__header.scroll .user-info__name {
+  font-size: 14px;
+}
+
+.profile__header.scroll .user-info__emails {
+  font-size: 12px;
+}
+
+.profile__header.scroll .user-info__btn {
+  display: none;
+}
+
+.status-bar {
+  grid-area: status-bar;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 5px 6px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.profile__back {
+  grid-area: back;
+  width: 20px;
+  height: 20px;
+  fill: var(--black);
+  margin-left: 20px;
+}
+
+.user-info {
+  grid-area: user-info;
+  text-align: center;
+}
+
+.user-info__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+}
+
+.user-info__name {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.user-info__emails {
+  font-size: 16px;
+  opacity: 0.54;
+  margin-bottom: 10px;
+}
+
+.profile__more {
+  grid-area: more;
+  width: 20px;
+  height: 20px;
+  fill: var(--black);
+  margin-right: 20px;
+  justify-self: end;
+}
+
+.bottom-bar {
+  padding: 18px 10px;
+  font-size: 12px;
+  color: #3e4245;
+  text-align: center;
+}
+
+.info-list {
+  list-style-type: none;
+  margin: 0;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+  padding: 0 20px;
+}
+
+.info-item {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  grid-column-gap: 25px;
+}
+
+.info-item__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 24px;
+  fill: #000;
+  align-self: center;
+}
+
+.info-item__title {
+  font-size: 16px;
+}
+
+.info-item__info {
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.status-bar__icon {
+  width: 16px;
+  height: 12px;
+}
+
+.status-bar__left {
+  text-align: left;
+}
+
+.status-bar__center {
+  text-align: center;
+}
+
+.status-bar__right {
+  text-align: right;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    "tab1 tab2 tab3 tab4"
+    "content content content content";
+}
+
+.tabs label {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+label:hover {
+  color: var(--blue);
+  transition: color 0.3s;
+}
+
+label.is-active {
+  color: var(--blue);
+  border: red;
+}
+
+input:checked + label {
+  color: var(--blue);
+}
+
+.tabs .hide {
+  display: none;
+}
+
+.tabs .active {
+  opacity: 1;
+}
+
+#tab1 > label {
+  grid-area: tab1;
+}
+
+#tab2 > label {
+  grid-area: tab2;
+}
+
+#tab3 > label {
+  grid-area: tab3;
+}
+
+#tab4 > label {
+  grid-area: tab4;
+}
+
+:checked + label + div {
+  grid-area: content;
+}
+
+[class*="tab-"] {
+  opacity: 0;
+  max-width: 0;
+  max-height: 0;
+  grid-area: content;
+}
+
+:checked + label + [class*="tab-"] {
+  opacity: 1;
+  max-width: 100%;
+  max-height: 100vh;
+  transition: opacity 0.3s;
+  border: var(--blue);
+}

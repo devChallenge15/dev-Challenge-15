@@ -1,0 +1,14 @@
+{
+    "weather_label": "Get Weather",
+    "city_placeholder": "City",
+    "language_change_label": "Change Language",
+    "weather": {
+        "temperature_now": "Temparature (now)",
+        "temperature_min": "Min",
+        "temperature_max": "Max",
+        "humidity": "Humidity",
+        "description": "Weather"
+    },
+    "success": "Success in getting data",
+    "error": "Error in getting data"
+}

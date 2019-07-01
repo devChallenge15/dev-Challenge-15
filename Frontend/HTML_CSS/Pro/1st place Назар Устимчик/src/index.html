@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./icons.css">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Dev Challenge</title>
+</head>
+<body>
+  <header class="header">
+    <button class="header__back h-icon-btn i-back h-icon">Back</button>
+    <div class="header__info">
+      <img class="header__photo" src="images/avatar.jpg" alt="avatar" />
+      <div class="header__wrp">
+        <h1 class="header__name ellipsis h-ellipsis">Elwin Sharvill</h1>
+        <div href="mailto:elwinsharvill@gmail.com" class="header__mail h-ellipsis">elwinsharvill@gmail.com <span class="header__mail-badge i-badge"></span></div>
+        <button class="header__manage h-ellipsis" type="button">Manage your Google Account</button>
+      </div>
+    </div>
+    <button class="header__menu h-icon-btn i-menu h-icon">Menu</button>
+  </header>
+  <main class="main">
+    <input type="radio" name="tabs" id="info-tab" hidden>
+    <input type="radio" name="tabs" id="assistant-tab" hidden>
+    <input type="radio" name="tabs" id="services-tab" hidden>
+    <input type="radio" name="tabs" id="home-tab" hidden checked>
+    <ul class="tablist">
+      <li>
+        <label for="info-tab" class="tab">Your info</label>
+      </li>
+      <li>
+        <label for="assistant-tab" class="tab">Assistant</label>
+      </li>
+      <li>
+        <label for="services-tab" class="tab">Services</label>
+      </li>
+      <li>
+        <label for="home-tab" class="tab">Home</label>
+      </li>
+    </ul>
+    <div class="tabpanels">
+      <section id="info" class="tabpanel">
+        <ul class="menu-items">
+          <li class="menu-item">
+            <i class="menu-item__icon i-person h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Nickname</p>
+            <p class="h-ellipsis menu-item__subtitle">What your Assistant will call you</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-home h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Nickname</p>
+            <p class="h-ellipsis menu-item__subtitle">What your Assistant will call you</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-car h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Nickname</p>
+            <p class="h-ellipsis menu-item__subtitle">What your Assistant will call you</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-card h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Nickname</p>
+            <p class="h-ellipsis menu-item__subtitle">What your Assistant will call you</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-umbrella h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Nickname</p>
+            <p class="h-ellipsis menu-item__subtitle">What your Assistant will call you</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-cart h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Nickname</p>
+            <p class="h-ellipsis menu-item__subtitle">What your Assistant will call you</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-restaurant h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Nickname</p>
+            <p class="h-ellipsis menu-item__subtitle">What your Assistant will call you</p>
+          </li>
+        </ul>
+      </section>
+      <section id="assistant" class="tabpanel">
+        <ul class="menu-items">
+          <li class="menu-item">
+            <i class="menu-item__icon i-language h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Languages</p>
+            <p class="h-ellipsis menu-item__subtitle">For speaking to your Assistant</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-answer h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Continued Conversation</p>
+            <p class="h-ellipsis menu-item__subtitle">For asking follow-up questions</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-lightbulb h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Home control</p>
+            <p class="h-ellipsis menu-item__subtitle">Manage the devices in your home</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-brightness h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Routines</p>
+            <p class="h-ellipsis menu-item__subtitle">Multiple actions with one command</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-mail h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Email updates</p>
+            <p class="h-ellipsis menu-item__subtitle">Latest news & features</p>
+          </li>
+          <li>
+            <ul class="sub-menu">
+              <li class="sub-menu__title h-ellipsis">Assistant devices</li>
+              <li class="menu-item menu-item_simple">
+                <i class="menu-item__icon i-phone h-icon"></i>
+                <p class="h-ellipsis menu-item__title">Elwin's iPhone</p>
+              </li>
+              <li class="menu-item menu-item_simple">
+                <i class="menu-item__icon i-speaker h-icon"></i>
+                <p class="h-ellipsis menu-item__title">Google Home Mini</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="services" class="tabpanel">
+        <ul class="menu-items">
+          <li class="menu-item">
+            <i class="menu-item__icon i-local_phone h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Voice & video calls</p>
+            <p class="h-ellipsis menu-item__subtitle">Service & default numbers</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-list h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Service & default numbers</p>
+            <p class="h-ellipsis menu-item__subtitle">See or edit your list</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-music h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Music</p>
+            <p class="h-ellipsis menu-item__subtitle">Services used to play music</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-news h-icon"></i>
+            <p class="h-ellipsis menu-item__title">News</p>
+            <p class="h-ellipsis menu-item__subtitle">Services used to play news</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-video h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Videos & Photos</p>
+            <p class="h-ellipsis menu-item__subtitle">Services that play videos & show photos</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-calendar h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Calendar</p>
+            <p class="h-ellipsis menu-item__subtitle">Default calendars</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-touch h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Reminders</p>
+            <p class="h-ellipsis menu-item__subtitle">Create or manage reminders</p>
+          </li>
+          <li class="menu-item">
+            <i class="menu-item__icon i-trending h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Stocks</p>
+            <p class="h-ellipsis menu-item__subtitle">Follow stocks & set preferences</p>
+          </li>
+
+        </ul>
+      </section>
+      <section id="home" class="tabpanel">
+        <ul class="menu-items">
+          <li class="menu-item menu-item_simple">
+            <i class="menu-item__icon i-add h-icon"></i>
+            <p class="h-ellipsis menu-item__title">Add...</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <a href="" target="_blank">Privacy Policy</a> ● <a href="" target="_blank">Terms of Service</a>
+  </footer>
+  <div class="popup">
+    <p class="popup__text">We are using Cookie</p>
+    <button class="popup__btn">ok ;(</button>
+  </div> 
+  <script src="./main.js"></script>
+</body>
+
+</html>
