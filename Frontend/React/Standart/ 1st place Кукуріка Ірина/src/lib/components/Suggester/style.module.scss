@@ -1,0 +1,15 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-items: stretch;
+  width: 100%;
+}
+
+.autocompleter {
+  width: 50px;
+}
+
+.input {
+  flex: 1;
+}

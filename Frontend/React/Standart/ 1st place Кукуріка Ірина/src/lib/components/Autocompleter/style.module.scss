@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+$distanceFromParent: 4px;
+
+.suggestionsWrapper {
+  position: absolute;
+  top: calc(100% + #{$distanceFromParent});
+  left: 0;
+  right: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 1px 1px 4px rgba(black, .6);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50px;
+  background: none;
+  outline: none;
+  border: 1px solid $gray;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  background: $lightGray;
+  transition: .3s;
+
+  &::after {
+    content: '▼';
+    font-size: 8px;
+    width: 20px;
+    text-align: center;
+    transform: rotate(180deg);
+    transition: .3s;
+  }
+}
+
+.buttonOpenedState {
+  background: #FFF;
+
+  &::after {
+    transform: rotate(0deg);
+  }
+}
