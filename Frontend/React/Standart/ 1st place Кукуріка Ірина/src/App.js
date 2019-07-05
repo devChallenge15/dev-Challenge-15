@@ -1,15 +1,12 @@
-import React from 'react';
-import PhoneSuggester from './lib';
-import './App.css';
+import React, { Component } from 'react';
+import CountriesSelectionWrap from './containers/CountriesSelectionWrap';
 
-function App() {
-  return (
-    <div className="App">
-      <PhoneSuggester
-        onChange={(nextItem) => {console.log(nextItem);}}
-      />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <CountriesSelectionWrap />
+    );
+  }
 }
 
 export default App;

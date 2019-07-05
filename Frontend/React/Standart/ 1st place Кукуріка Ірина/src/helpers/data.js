@@ -1489,7 +1489,7 @@ function addCountryCode(iso2, dialCode, priority) {
   }
   const index = priority || 0;
   allCountryCodes[dialCode][index] = iso2;
-};
+}
 
 const allCountries = [].concat(...rawAllCountries.map((country) => {
   const countryItem = {
@@ -1499,7 +1499,7 @@ const allCountries = [].concat(...rawAllCountries.map((country) => {
     dialCode: country[3],
     format: country[4] || undefined,
     priority: country[5] || 0,
-    hasAreaCodes: country[6] ? true : false,
+    hasAreaCodes: !!country[6],
   };
 
   const areaItems = [];
@@ -1513,7 +1513,7 @@ const allCountries = [].concat(...rawAllCountries.map((country) => {
     areaItems.push(areaItem);
 
     addCountryCode(country[2], areaItem.dialCode);
-    return null;
+    return areaItem;
   });
 
   addCountryCode(

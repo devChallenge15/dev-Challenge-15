@@ -1,0 +1,81 @@
+.selectionWrapper {
+  width: 300px;
+}
+
+.selectionInputWrap {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.countriesList {
+  max-height: 100px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.countiesList:focus {
+  outline: 0;
+}
+
+.countyItem {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.countyItem span {
+  margin-right: 5px;
+}
+
+.countyItem.active {
+  background-color: #f8f9fa;
+}
+
+.countyItem:hover {
+  background-color: #f8f9fa;
+}
+
+.countryItemCode {
+  margin-left: 5px;
+  color: #6c757d;
+}
+
+.selectionInput {
+  border: 1px solid #ced4da;
+  border-radius: 0 4px 4px 0;
+  color: #495057;
+  font-size: 16px;
+  padding: 6px 12px;
+  flex: 1;
+}
+
+.selectionInput {
+  outline: 0;
+}
+
+.countryButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ced4da;
+  border-right: 0;
+  background-color: #f8f9fa;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.countryButton span {
+  margin-right: 3px;
+}
+
+.countryButton:focus {
+  outline: 0;
+}

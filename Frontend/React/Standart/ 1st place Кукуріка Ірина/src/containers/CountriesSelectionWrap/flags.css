@@ -1,7 +1,8 @@
 .flag {
+  display: block;
   width: 16px;
   height: 11px;
-  background: url("./flags.png");
+  background: url("../../images/flags.png");
 }
 .ad {
   background-position: -16px 0;
@@ -694,7 +695,6 @@
 .zw {
   background-position: -96px -154px;
 }
-
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
